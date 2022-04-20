@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body style="background-color: #0c0f38">
+    <div style="color:white; padding-left: 0.5em; padding-top: 0.5em">
+        <h1>Websocket Connected Dashboard</h1>
+        <br>
+
+        <H3><u>Fetch Campaigns From Backend</u></H3>
+        <br>
+        <div style="padding-left: 1em">
+            <button id="button" class="button">PUSH</button>
+        </div>
+      
+        <br>
+        <H3><u>Selected A Campaign</u></H3>
+        <br>
+
+        <div style="padding-left: 1em">
+            <button id="monday">Monday's</button>
+        </div>
+        <br>
+
+        <div style="padding-left: 1em">
+            <button id="tuesday">Tuesday's</button>
+        </div>
+        <br>
+        <br>
+
+        <H3><u>The Selected Campaign</u></H3>
+        <br>
+
+        
+        <div
+            style="border-collapse: separate; border-spacing: 0.08em"
+            id="campaign"
+        ></div>
+        
+        <br>
+
+        <H3><u>Apply Selected Campaign</u></H3>
+        <br>
+
+        <div style="padding-left: 1em">
+            <button id="apply">APPLY</button>
+        </div>
+        <br>
+
+        <div
+        style="border-collapse: separate; border-spacing: 0.08em"
+        id="applied"
+        ></div>
+
+    </div>
+</body>
