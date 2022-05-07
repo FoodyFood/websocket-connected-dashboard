@@ -1,5 +1,5 @@
 // Connect to the backend
-var socket = io('wss://backend.liveqr.cloud:443');
+var socket = io('wss://backend.infra-push.com:443');
 
 
 // Variable to store the campaigns once we fetch them
@@ -20,6 +20,7 @@ socket.on('notification', recievedPacket => {
     var message = recievedData.message;
 
     campaigns = JSON.parse(message).Campaigns;
+    console.log(campaigns)
 });
 
 
